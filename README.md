@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎵 Music Player App
 
-## Getting Started
+A modern, responsive **music player built with Next.js, React, and TypeScript**.  
+Supports playlists, categories, search, mini & full player views, volume control, next/previous controls, shuffle, and a real-time progress bar.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Full playlist view** with search and category filters.
+- **Mini player** at the bottom when a song is playing.
+- **Full player** view with big cover art, progress bar, and controls.
+- **Play / Pause, Next / Previous, Shuffle** functionality.
+- **Volume control** with percentage display.
+- **Responsive and neat UI** with minimal scrolling.
+- **Progress bar** showing how much of the song is played and remaining.
+- **Professional and clean design** inspired by Spotify / YouTube Music.
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 13+ (`app` directory, client components)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **State Management:** React `useState` / `useRef` / `useEffect`
+
+## 📁 Project Structure
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+/app
+/components
+Player.tsx
+Playlist.tsx
+Search.tsx
+/data
+songs.ts
+/public
+/screenshots
+Screenshotplaylist.png
+Screenshot.png
+/images (not included)
+cover1.jpg, cover2.jpg ...
+/music (not included)
+song1.mp3, song2.mp3 ...
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📸 Screenshots
 
-## Learn More
+**Playlist view:**  
+![Playlist view](public/screenshots/Screenshotplaylist.png)
 
-To learn more about Next.js, take a look at the following resources:
+**Full Player view:**  
+![Full Player view](public/screenshots/Screenshot.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> ⚠️ Note: Music files (`/public/music`) and cover images (`/public/images`) are **not included** due to repo size.  
+> To run the app, add your own `.mp3` files and cover images with paths matching `songs.ts`.
