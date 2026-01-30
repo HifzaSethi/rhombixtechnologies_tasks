@@ -46,7 +46,7 @@ song1.mp3, song2.mp3 ...
 ## 📸 Screenshots
 
 **Playlist view:**  
-![Playlist view](public/screenshots/Screenshotplaylist.png)
+![Playlist view](public/screenshots/Screenshot1.png)
 
 **Full Player view:**  
 ![Full Player view](public/screenshots/Screenshot.png)
