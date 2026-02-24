@@ -33,49 +33,40 @@ const Projects = () => {
             highlight
           />
 
+          {/* AI Mental Health Detection */}
+          <ProjectCard
+            icon={faBrain}
+            title="AI Mental Health Detection System"
+            description="An AI-powered system for real-time mental health assessment using emotion detection and intelligent feedback."
+            tech="React.js, Tailwind CSS, Flask, Python, CNN"
+            github="https://github.com/HifzaSethi/YOUR-FYP-REPO"
+          />
+
+          {/* Sign Language & Drawing Detection */}
+          <ProjectCard
+            icon={faHand}
+            title="Sign Language & Drawing Detection"
+            description="Computer vision system that recognizes hand gestures and drawings in real time using deep learning."
+            tech="Python, OpenCV, TensorFlow, CNN"
+            github="https://github.com/HifzaSethi/YOUR-CV-REPO"
+          />
+
+          {/* Music Player */}
+          <ProjectCard
+            icon={faMusic}
+            title="Music Player Application"
+            description="A modern music streaming interface with playlists and responsive UI."
+            tech="Next.js, TypeScript, Tailwind CSS"
+            github="https://github.com/HifzaSethi/YOUR-MUSIC-REPO"
+          />
+
           {/* Airbnb Clone */}
           <ProjectCard
             icon={faHouse}
-            title="Airbnb Clone (Backend Focus)"
-            description="A backend-driven Airbnb clone with complete home management system including add-home, list-homes, home details, and 404 error handling."
+            title="Airbnb Clone (Backend MVC)"
+            description="Backend-focused Airbnb clone with home management, dynamic routing, and MVC architecture."
             tech="Node.js, Express.js"
             github="https://github.com/HifzaSethi/NODEJS-Learning/tree/main/chapter11"
-          />
-
-          {/* Todo App */}
-          <ProjectCard
-            icon={faListCheck}
-            title="To-Do List Application"
-            description="A React-based task manager with add, edit, delete"
-            tech="React.js, Bootstrap, React icons"
-            github="https://github.com/HifzaSethi/React-Practice-Projects/tree/main/TodoApp"
-          />
-
-          {/* Portfolio */}
-          <ProjectCard
-            icon={faCode}
-            title="Personal Portfolio Website"
-            description="A fully responsive and professional portfolio showcasing my skills, experience, and projects."
-            tech="React.js, Tailwind CSS"
-            github="YOUR_GITHUB_LINK"
-          />
-
-          <ProjectCard
-            icon={faGamepad}
-            title="Mini Practice Projects"
-            description="A collection of small applications and utilities built to strengthen problem-solving skills and hands-on experience across frontend and backend technologies."
-            tech="HTML, CSS, JavaScript, React.js, Node.js, Express.js"
-            github="https://github.com/HifzaSethi/"
-            extra={[
-              "Mini Social Media App (Basic)",
-              "Password Generator",
-              "Encryption & Decryption Utility",
-
-              "Calculator Application",
-              "Tic Tac Toe",
-              "Stone Paper Scissors",
-              "Other small React & backend practice projects",
-            ]}
           />
         </div>
       </div>
