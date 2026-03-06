@@ -1,0 +1,111 @@
+/* ===== Background ===== */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  background: #f4f5f7;
+  /* light gray like your app */
+  padding: 20px;
+}
+
+/* ===== Form Card ===== */
+
+.form {
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 18px;
+
+  width: 100%;
+  max-width: 380px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s ease;
+}
+
+.form:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Title ===== */
+
+.title {
+  text-align: center;
+
+  margin-bottom: 25px;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  color: #ff7a00;
+  /* orange like your theme */
+}
+
+/* ===== Inputs ===== */
+
+.input {
+  width: 100%;
+
+  padding: 12px;
+
+  margin-bottom: 15px;
+
+  border-radius: 8px;
+  border: 1px solid #ddd;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.input:focus {
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.2);
+}
+
+/* ===== Button ===== */
+
+.button {
+  width: 100%;
+
+  padding: 12px;
+
+  background: #ff7a00;
+  /* orange button */
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #e66a00;
+  transform: scale(1.03);
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 500px) {
+  .form {
+    padding: 25px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+}

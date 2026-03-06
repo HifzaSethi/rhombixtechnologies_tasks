@@ -1,0 +1,193 @@
+/* ===== BACKGROUND ===== */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+
+  background: linear-gradient(135deg, #f4f5f7, #e9ebf0);
+  min-height: 100vh;
+}
+
+/* ===== TITLE ===== */
+
+.title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+
+  color: #ff7a00;
+  /* ORANGE */
+
+  margin-bottom: 40px;
+}
+
+/* ===== GRID LAYOUT ===== */
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* ===== CARD DESIGN ===== */
+
+.card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== INPUTS ===== */
+
+.input {
+  width: 100%;
+
+  padding: 12px;
+
+  margin-bottom: 15px;
+
+  border-radius: 8px;
+  border: 1px solid #ddd;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.input:focus {
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.2);
+}
+
+/* ===== BUTTONS ===== */
+
+.button {
+  width: 100%;
+
+  padding: 12px;
+
+  background: #28a745;
+  /* GREEN */
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #1f8f35;
+  transform: scale(1.03);
+}
+
+/* ===== DELETE BUTTON ===== */
+
+.deleteBtn,
+.dltbutton {
+  padding: 8px 14px;
+
+  background: #ff3b3b;
+  /* RED */
+
+  color: white;
+
+  border: none;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.deleteBtn:hover,
+.dltbutton:hover {
+  background: #c40000;
+  transform: scale(1.05);
+}
+
+/* ===== LIST ITEMS (RestaurantList / MenuList) ===== */
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+  background: #f8f9fb;
+
+  margin-bottom: 10px;
+
+  transition: 0.3s;
+}
+
+.listItem:hover {
+  background: #ffe9d6;
+  transform: translateX(5px);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .sections {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
+
+/* ===== ADD SECTION (TOP ROW) ===== */
+
+.addRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+
+  margin-bottom: 60px;
+}
+
+/* ===== LIST SECTION ===== */
+
+.listSection {
+  margin-top: 40px;
+}
+
+/* ===== SUB HEADINGS ===== */
+
+.subHeading {
+  font-size: 22px;
+  font-weight: bold;
+
+  color: #ff7a00;
+  /* Orange */
+
+  margin: 30px 0 15px 0;
+
+  border-left: 5px solid #ff7a00;
+  padding-left: 10px;
+}

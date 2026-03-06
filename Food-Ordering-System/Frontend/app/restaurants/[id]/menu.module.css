@@ -1,0 +1,24 @@
+.menuGrid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  /* 👈 3 cards per row */
+
+  gap: 25px;
+
+  margin-top: 30px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .menuGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .menuGrid {
+    grid-template-columns: 1fr;
+  }
+}

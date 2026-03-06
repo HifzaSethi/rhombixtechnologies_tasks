@@ -1,0 +1,40 @@
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+
+  animation: pulse 1.5s infinite;
+}
+
+.image {
+  height: 180px;
+  background: #eee;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.text {
+  height: 18px;
+  background: #eee;
+  margin-bottom: 8px;
+}
+
+.textSmall {
+  height: 12px;
+  width: 60%;
+  background: #eee;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}

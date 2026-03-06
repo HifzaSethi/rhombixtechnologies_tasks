@@ -1,0 +1,39 @@
+.page {
+  padding: 50px 60px;
+
+  background: #f4f5f7;
+  /* light gray like food apps */
+
+  min-height: 100vh;
+}
+
+.title {
+  text-align: left;
+
+  font-size: 32px;
+  font-weight: 700;
+
+  color: #ff7a00;
+  /* ORANGE heading */
+
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+  gap: 25px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .page {
+    padding: 25px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
